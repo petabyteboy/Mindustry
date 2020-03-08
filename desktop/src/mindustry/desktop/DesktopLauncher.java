@@ -53,6 +53,7 @@ public class DesktopLauncher extends ClientLauncher{
                 setWindowIcon(FileType.internal, "icons/icon_64.png");
             }});
         }catch(Throwable e){
+          e.printStackTrace();
             handleCrash(e);
         }
     }
